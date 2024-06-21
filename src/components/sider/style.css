@@ -1,0 +1,23 @@
+.sider {}
+
+.siderItem:hover {
+    background-color: #DAE1EC;
+    transition: all 0.2s ease-in-out;
+}
+
+.siderItem {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    padding-left: 8px;
+    height: 56px;
+}
+
+.siderActiveItem {
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    padding-left: 8px;
+    height: 56px;
+    background-color: #0A65FF;
+    color: #fff;
+}
