@@ -15,7 +15,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import AppTable from "../../components/table";
 import useFetch from "../../hooks/useFetch";
-import { batchActionOptions } from "../../lib/constants";
+import { batchActionOptions } from "../../utils/constants";
 import { encodeQueryData } from "../../utils/queryString";
 
 const { Search } = Input;

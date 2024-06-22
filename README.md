@@ -77,15 +77,17 @@ case-status-management/
 │   │   ├── table
 │   │   └── ...
 │   ├── modules/
-│   │   ├── cases.js
-│   │   ├── layout.js
+│   │   ├── cases
+│   │   ├── layout
 │   │   └── ...
 │   ├── utils/
-│   │   ├── apiClient
-│   │   ├── queryString
+│   │   ├── queryString.js
+│   │   └── ...
+│   ├── lib/
+│   │   ├── apiClient.js
 │   │   └── ...
 │   ├── hooks/
-│   │   ├── useFetch
+│   │   ├── useFetch.js
 │   │   └── ...
 │   ├── App.js
 │   ├── index.js
@@ -96,11 +98,21 @@ case-status-management/
 ```
 
 - **`public/`**: Static assets and entry HTML file.
-- **`src/`**: Main source code including components, pages, and assets.
+- **`src/`**: Main source code including components, modules, hooks, utilities, and library integrations.
   - **`components/`**: Reusable components like table and sider.
-  - **`modules/`**: Different module views.
-- **`App.js`**: Main application component.
-- **`index.js`**: Entry point for React.
+    - **`Table.js`**: Component for displaying case data in a tabular format.
+    - **`Sider.js`**: Component for the sidebar navigation.
+  - **`modules/`**: Different module views for various parts of the application.
+    - **`CaseModule.js`**: Module for managing cases.
+  - **`hooks/`**: Custom hooks for reusable logic across components.
+    - **`useFetch.js`**: Hook for data fetching logic.
+  - **`utils/`**: Utility functions for common operations.
+    - **`queryString.js`**: Utility to format query strings.
+  - **`lib/`**: Library code and third-party integrations.
+    - **`apiClient.js`**: API client for making HTTP requests.
+  - **`App.js`**: Main application component.
+  - **`index.js`**: Entry point for React.
+
 
 ## Available Scripts
 
