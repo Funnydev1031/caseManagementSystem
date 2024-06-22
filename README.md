@@ -84,10 +84,6 @@ case-status-management/
 │   │   ├── apiClient
 │   │   ├── queryString
 │   │   └── ...
-│   ├── components/
-│   │   ├── sider
-│   │   ├── table
-│   │   └── ...
 │   ├── hooks/
 │   │   ├── useFetch
 │   │   └── ...
