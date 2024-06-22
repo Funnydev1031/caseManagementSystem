@@ -1,70 +1,145 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Case Status Management Application
+
+![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+
+This project is a web application for managing the statuses of various cases. Built with React and Create React App, it provides a user-friendly interface to track, update, and manage cases efficiently.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Funnydev1031/caseManagementSystem.git
+   cd caseManagementSystem
+   ```
+
+2. **Install dependencies:**
+
+   Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. Then, run:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the application:**
+
+   ```bash
+   npm start
+   ```
+
+   The app should now be running at `http://localhost:3000`.
+
+## Usage
+
+Once the application is running, you can perform the following tasks:
+
+- **Update Case Status:** Change the status of a case to reflect its current state.
+- **Batch Update:** Change the status of multiple cases to reflect its current state.
+- **Filter Cases:** View cases based on their status or other attributes.
+- **Delete Case:** Remove cases that are no longer needed.
+- **Search Cases:** Search All available cases.
+- **Custome Columns:** Customize Table columns based on what you need.
+
+## Features
+
+- **Dynamic Status Updates:** Easily change the status of a case and see updates in real-time.
+- **User-Friendly Interface:** Intuitive design for easy navigation and case management.
+- **Search and Filter:** Quickly find cases using search and filter options.
+- **Responsive Design:** Accessible on both desktop and mobile devices.
+
+## Project Structure
+
+The project's structure is as follows:
+
+```
+case-status-management/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── sider
+│   │   ├── table
+│   │   └── ...
+│   ├── modules/
+│   │   ├── cases.js
+│   │   ├── layout.js
+│   │   └── ...
+│   ├── utils/
+│   │   ├── apiClient
+│   │   ├── queryString
+│   │   └── ...
+│   ├── components/
+│   │   ├── sider
+│   │   ├── table
+│   │   └── ...
+│   ├── hooks/
+│   │   ├── useFetch
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+- **`public/`**: Static assets and entry HTML file.
+- **`src/`**: Main source code including components, pages, and assets.
+  - **`components/`**: Reusable components like table and sider.
+  - **`modules/`**: Different module views.
+- **`App.js`**: Main application component.
+- **`index.js`**: Entry point for React.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- **`npm start`**: Runs the app in development mode.
+- **`npm test`**: Launches the test runner.
+- **`npm run build`**: Builds the app for production.
+- **`npm run eject`**: Ejects the app to allow for customization of the build configuration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: JavaScript library for building user interfaces.
+- **Create React App**: Tool to set up a new React project with a default configuration.
+- **React Router**: Library for routing in React applications.
+- **Axios**: Promise-based HTTP client for making API requests.
 
-### `npm test`
+## Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributions are welcome! To contribute:
 
-### `npm run build`
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Please adhere to the [code of conduct](CODE_OF_CONDUCT.md).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Created by Toby. For questions or issues, please reach out via [toby.william.allen@outlook.com](mailto:toby.william.allen@outlook.com).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

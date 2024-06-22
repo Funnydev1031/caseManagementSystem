@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import apiClient from "../../../utils/apiClient";
+import apiClient from "../utils/apiClient";
 
 const actions = {
 	fetchRequest: "FETCH_DATA_REQUEST",
